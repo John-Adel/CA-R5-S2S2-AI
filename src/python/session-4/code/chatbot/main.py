@@ -1,12 +1,4 @@
-from chatbot import get_response
-def chatbot():
-    print("Chatbot: Hi! How can I assist you today?")
+from design.cli_ui import main_bot
 
-    while True:
-        user_input = input("User: ").lower()
-        response = get_response(user_input)
-        print("Chatbot:", response)
-
-        if user_input == "goodbye":
-            break
-chatbot()
+if __name__ == "__main__":
+    main_bot()
